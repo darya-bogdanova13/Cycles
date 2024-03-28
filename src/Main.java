@@ -101,7 +101,8 @@ public class Main {
             if (i % 6 == 0) {
                 System.out.println("Сумма " + deposit2 + " ,месяц " + i);
                 System.out.println();
-            }}
+            }
+        }
         System.out.println();
         System.out.println("Циклы 2, задача 6");
         double deposit3 = 15000d;
@@ -110,19 +111,20 @@ public class Main {
             deposit3 = deposit3 + deposit3 * percent4;
             if (i % 6 == 0) {
                 System.out.println("Сумма " + deposit3 + " , месяц " + i);
-            }}
-            for (i = 1; i <= 31; i += 7) {
-                System.out.println("Сегодня пятница, " + i + " -е число." + " Необходимо подготовить отчет");
-                System.out.println();
             }
-            int year = 2100;
-            int time = 200;
-            for (i = 0; i < year + 100; i += 79) {
-                if (i > year - time) {
-                    System.out.println(i);
-                }
+        }
+        for (i = 1; i <= 31; i += 7) {
+            System.out.println("Сегодня пятница, " + i + " -е число." + " Необходимо подготовить отчет");
+            System.out.println();
+        }
+        int year = 2100;
+        int time = 200;
+        for (i = 0; i < year + 100; i += 79) {
+            if (i > year - time) {
+                System.out.println(i);
             }
         }
     }
+}
 
 
