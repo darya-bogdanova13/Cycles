@@ -51,83 +51,78 @@ public class Main {
         System.out.println("Циклы 2, задача 1");
         double sum = 15000;
         double total2 = 0d;
-        int i9 = 0;
+        int i = 0;
         double percent = 0.01;
         while (total2 <= 2459000) {
             total2 = total2 + (total2 * percent);
             total2 = total2 + sum;
-            i9++;
-            System.out.println("Месяц " + i9 + " ,сумма накоплений равна " + total2 + " рублей");
+            i++;
+            System.out.println("Месяц " + i + " ,сумма накоплений равна " + total2 + " рублей");
         }
         System.out.println("Циклы 2, задача 2");
-        int i10 = 1;
+        i = 1;
         do {
-            System.out.print(i10 + " ");
-            i10 = i10 + 1;
+            System.out.print(i + " ");
+            i = i + 1;
         }
-        while (i10 <= 10);
+        while (i <= 10);
         System.out.println();
-        for (int i11 = 10; i11 >= 0; i11 = i11 - 1) {
-            System.out.print(i11 + " ");
+        for (i = 10; i >= 0; i = i - 1) {
+            System.out.print(i + " ");
         }
         System.out.println();
         System.out.println("Циклы 2, задача 3");
         double people = 12000000d;
         int birthrate = 17;
         int mortality = 8;
-        percent = 0.01;
-        int i = 0;
-        i = 0;
+        double percent1 = 0.01;
         for (i = 0; i <= 10; i = i + 1) {
-            people = people + percent * people * (birthrate - mortality);
+            people = people + percent1 * people * (birthrate - mortality);
             System.out.println("Год " + i + " ,численность населения составляет " + people);
         }
         System.out.println("Циклы 2, задача 4");
         int deposit4 = 15000;
-        int i4 = 0;
+        i = 0;
         double sum4 = 0d;
-        percent = 1.07;
+        double percent2 = 1.07;
         while (sum4 <= 12000000) {
-            sum4 = (sum4 + deposit4) * percent;
-            i4++;
-            System.out.println("В месяце " + i4 + " накоплений " + sum4);
+            sum4 = (sum4 + deposit4) * percent2;
+            i++;
+            System.out.println("В месяце " + i + " накоплений " + sum4);
         }
 
         System.out.println();
         System.out.println("Циклы 2, задача 5");
         double deposit2 = 15000d;
-        double percent2 = 0.07d;
+        double percent3 = 0.07d;
         int sum2 = 12000000;
-        int i20;
-        for (i20 = 0; deposit2 < sum2; i20++) {
-            deposit2 = deposit2 + deposit2 * percent2;
-            if (i20 % 6 == 0) {
-                System.out.println("Сумма " + deposit2 + " ,месяц " + i20);
+        for (i = 0; deposit2 < sum2; i++) {
+            deposit2 = deposit2 + deposit2 * percent3;
+            if (i % 6 == 0) {
+                System.out.println("Сумма " + deposit2 + " ,месяц " + i);
                 System.out.println();
-            }
-        }
+            }}
         System.out.println();
         System.out.println("Циклы 2, задача 6");
         double deposit3 = 15000d;
-        double percent3 = 0.07d;
-        for (int i21 = 0; i21 <= 108; i21++) {
-            deposit3 = deposit3 + deposit3 * percent3;
-            if (i21 % 6 == 0) {
-                System.out.println("Сумма " + deposit3 + " , месяц " + i21);
-            }
-            for (int i22 = 1; i22 <= 31; i22 += 7) {
-                System.out.println("Сегодня пятница, " + i22 + " -е число." + " Необходимо подготовить отчет");
+        double percent4 = 0.07d;
+        for (i = 0; i <= 108; i++) {
+            deposit3 = deposit3 + deposit3 * percent4;
+            if (i % 6 == 0) {
+                System.out.println("Сумма " + deposit3 + " , месяц " + i);
+            }}
+            for (i = 1; i <= 31; i += 7) {
+                System.out.println("Сегодня пятница, " + i + " -е число." + " Необходимо подготовить отчет");
                 System.out.println();
             }
             int year = 2100;
             int time = 200;
-            for (int i23 = 0; i23 < year + 100; i23 += 79) {
-                if (i23 > year - time) {
-                    System.out.println(i23);
+            for (i = 0; i < year + 100; i += 79) {
+                if (i > year - time) {
+                    System.out.println(i);
                 }
             }
         }
     }
-}
 
 
