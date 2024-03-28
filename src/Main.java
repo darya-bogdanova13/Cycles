@@ -113,10 +113,13 @@ public class Main {
                 System.out.println("Сумма " + deposit3 + " , месяц " + i);
             }
         }
+        System.out.println();
+        System.out.println("Задача 7");
         for (i = 1; i <= 31; i += 7) {
             System.out.println("Сегодня пятница, " + i + " -е число." + " Необходимо подготовить отчет");
             System.out.println();
         }
+        System.out.println("Задача 8");
         int year = 2100;
         int time = 200;
         for (i = 0; i < year + 100; i += 79) {
